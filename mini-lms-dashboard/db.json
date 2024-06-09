@@ -1,0 +1,544 @@
+{
+  "courses": [
+    {
+      "id": "1",
+      "course": "React Basics",
+      "description": "Learn the basics of React including components, state management, and JSX syntax.",
+      "category": "Web Development",
+      "lessons": [
+        {
+          "id": 1,
+          "title": "Introduction to React",
+          "completed": false
+        },
+        {
+          "id": 2,
+          "title": "React Components",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "course": "Advanced React",
+      "description": "Take your React skills to the next level with advanced concepts such as hooks, context API, and advanced component patterns.",
+      "category": "Web Development",
+      "lessons": [
+        {
+          "id": 1,
+          "title": "React Hooks",
+          "completed": false
+        },
+        {
+          "id": 2,
+          "title": "Context API",
+          "completed": false
+        }
+      ],
+      "title": "Advanced React"
+    },
+    {
+      "id": "3",
+      "course": "JavaScript Fundamentals",
+      "description": "Master the fundamentals of JavaScript including variables, data types, functions, and scope.",
+      "category": "Web Development",
+      "lessons": [
+        {
+          "id": 1,
+          "title": "Variables and Data Types",
+          "completed": false
+        },
+        {
+          "id": 2,
+          "title": "Functions and Scope",
+          "completed": false
+        },
+        {
+          "id": 3,
+          "title": "Objects and Arrays",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "course": "Node.js Basics",
+      "description": "Learn the basics of Node.js including modules, packages, and file system operations.",
+      "category": "Web Development",
+      "lessons": [
+        {
+          "id": 1,
+          "title": "Introduction to Node.js",
+          "completed": false
+        },
+        {
+          "id": 2,
+          "title": "Modules and Packages",
+          "completed": false
+        },
+        {
+          "id": 3,
+          "title": "File System",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "course": "CSS Flexbox and Grid",
+      "description": "Master layout techniques using Flexbox and Grid including creating responsive layouts.",
+      "category": "Web Development",
+      "lessons": [
+        {
+          "id": 1,
+          "title": "Introduction to Flexbox",
+          "completed": false
+        },
+        {
+          "id": 2,
+          "title": "Flexbox Layouts",
+          "completed": false
+        },
+        {
+          "id": 3,
+          "title": "Introduction to Grid",
+          "completed": false
+        },
+        {
+          "id": 4,
+          "title": "Grid Layouts",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "course": "Python for Beginners",
+      "description": "Get started with Python programming including basics, control structures, and functions.",
+      "category": "Data Science",
+      "lessons": [
+        {
+          "id": 1,
+          "title": "Python Basics",
+          "completed": false
+        },
+        {
+          "id": 2,
+          "title": "Control Structures",
+          "completed": false
+        },
+        {
+          "id": 3,
+          "title": "Functions and Modules",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "course": "Introduction to Data Science",
+      "description": "Learn the basics of data science including data manipulation, visualization, and basic machine learning.",
+      "category": "Data Science",
+      "lessons": [
+        {
+          "id": 1,
+          "title": "Data Manipulation",
+          "completed": false
+        },
+        {
+          "id": 2,
+          "title": "Data Visualization",
+          "completed": false
+        },
+        {
+          "id": 3,
+          "title": "Basic Machine Learning",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "course": "Database Design",
+      "description": "Understand the principles of database design including relational database design and SQL basics.",
+      "category": "Data Science",
+      "lessons": [
+        {
+          "id": 1,
+          "title": "Introduction to Databases",
+          "completed": false
+        },
+        {
+          "id": 2,
+          "title": "Relational Database Design",
+          "completed": false
+        },
+        {
+          "id": 3,
+          "title": "SQL Basics",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "course": "Machine Learning with Python",
+      "description": "Learn the basics of machine learning using Python including algorithms, data preparation, and model evaluation.",
+      "category": "Data Science",
+      "lessons": [
+        {
+          "id": 1,
+          "title": "Algorithms",
+          "completed": false
+        },
+        {
+          "id": 2,
+          "title": "Data Preparation",
+          "completed": false
+        },
+        {
+          "id": 3,
+          "title": "Model Evaluation",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "course": "Data Visualization with D3.js",
+      "description": "Create interactive data visualizations using D3.js including charts, graphs, and maps.",
+      "category": "Data Science",
+      "lessons": [
+        {
+          "id": 1,
+          "title": "Introduction to D3.js",
+          "completed": false
+        },
+        {
+          "id": 2,
+          "title": "Creating Charts",
+          "completed": false
+        },
+        {
+          "id": 3,
+          "title": "Interactive Visualizations",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "course": "UX Design Fundamentals",
+      "description": "Understand the principles of user experience design including user research, wireframing, and prototyping.",
+      "category": "Design",
+      "lessons": [
+        {
+          "id": 1,
+          "title": "User Research",
+          "completed": false
+        },
+        {
+          "id": 2,
+          "title": "Wireframing",
+          "completed": false
+        },
+        {
+          "id": 3,
+          "title": "Prototyping",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "course": "Graphic Design Basics",
+      "description": "Learn the basics of graphic design including typography, color theory, and design tools.",
+      "category": "Design",
+      "lessons": [
+        {
+          "id": 1,
+          "title": "Typography",
+          "completed": false
+        },
+        {
+          "id": 2,
+          "title": "Color Theory",
+          "completed": false
+        },
+        {
+          "id": 3,
+          "title": "Design Tools",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "course": "Introduction to Graphic Design",
+      "description": "Explore the foundations of graphic design including principles, elements, and practical applications.",
+      "category": "Design",
+      "lessons": [
+        {
+          "id": 1,
+          "title": "Design Principles",
+          "completed": false
+        },
+        {
+          "id": 2,
+          "title": "Design Elements",
+          "completed": false
+        },
+        {
+          "id": 3,
+          "title": "Practical Applications",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "course": "Web Design for Beginners",
+      "description": "Learn the fundamentals of web design including layout, color schemes, and typography.",
+      "category": "Design",
+      "lessons": [
+        {
+          "id": 1,
+          "title": "Layout Design",
+          "completed": false
+        },
+        {
+          "id": 2,
+          "title": "Color Schemes",
+          "completed": false
+        },
+        {
+          "id": 3,
+          "title": "Typography in Web Design",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "course": "Photoshop for Beginners",
+      "description": "Get started with Adobe Photoshop including basic tools, layers, and photo editing techniques.",
+      "category": "Design",
+      "lessons": [
+        {
+          "id": 1,
+          "title": "Basic Tools",
+          "completed": false
+        },
+        {
+          "id": 2,
+          "title": "Working with Layers",
+          "completed": false
+        },
+        {
+          "id": 3,
+          "title": "Photo Editing Techniques",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "course": "Introduction to Marketing",
+      "description": "Learn the basics of marketing including market research, branding, and digital marketing.",
+      "category": "Marketing",
+      "lessons": [
+        {
+          "id": 1,
+          "title": "Market Research",
+          "completed": false
+        },
+        {
+          "id": 2,
+          "title": "Branding",
+          "completed": false
+        },
+        {
+          "id": 3,
+          "title": "Digital Marketing",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "course": "Social Media Marketing",
+      "description": "Master social media marketing strategies including content creation, audience engagement, and analytics.",
+      "category": "Marketing",
+      "lessons": [
+        {
+          "id": 1,
+          "title": "Content Creation",
+          "completed": false
+        },
+        {
+          "id": 2,
+          "title": "Audience Engagement",
+          "completed": false
+        },
+        {
+          "id": 3,
+          "title": "Analytics",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "course": "SEO Fundamentals",
+      "description": "Learn the basics of search engine optimization including keyword research, on-page SEO, and link building.",
+      "category": "Marketing",
+      "lessons": [
+        {
+          "id": 1,
+          "title": "Keyword Research",
+          "completed": false
+        },
+        {
+          "id": 2,
+          "title": "On-Page SEO",
+          "completed": false
+        },
+        {
+          "id": 3,
+          "title": "Link Building",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": "19",
+      "course": "Email Marketing",
+      "description": "Discover the principles of email marketing including list building, email design, and campaign analysis.",
+      "category": "Marketing",
+      "lessons": [
+        {
+          "id": 1,
+          "title": "List Building",
+          "completed": false
+        },
+        {
+          "id": 2,
+          "title": "Email Design",
+          "completed": false
+        },
+        {
+          "id": 3,
+          "title": "Campaign Analysis",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": "20",
+      "course": "Content Marketing",
+      "description": "Learn the strategies of content marketing including content creation, distribution, and performance measurement.",
+      "category": "Marketing",
+      "lessons": [
+        {
+          "id": 1,
+          "title": "Content Creation",
+          "completed": false
+        },
+        {
+          "id": 2,
+          "title": "Content Distribution",
+          "completed": false
+        },
+        {
+          "id": 3,
+          "title": "Performance Measurement",
+          "completed": false
+        }
+      ]
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "email": "yhemant203@gmail.com",
+      "username": "Hemant ",
+      "password": "123",
+      "selectedCourse": [
+        {
+          "id": "1",
+          "course": "React Basics",
+          "description": "Learn the basics of React including components, state management, and JSX syntax.",
+          "category": "Web Development",
+          "lessons": [
+            {
+              "id": 1,
+              "title": "Introduction to React",
+              "completed": true
+            },
+            {
+              "id": 2,
+              "title": "React Components",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "course": "JavaScript Fundamentals",
+          "description": "Master the fundamentals of JavaScript including variables, data types, functions, and scope.",
+          "category": "Web Development",
+          "lessons": [
+            {
+              "id": 1,
+              "title": "Variables and Data Types",
+              "completed": false
+            },
+            {
+              "id": 2,
+              "title": "Functions and Scope",
+              "completed": true
+            },
+            {
+              "id": 3,
+              "title": "Objects and Arrays",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "course": "Advanced React",
+          "description": "Take your React skills to the next level with advanced concepts such as hooks, context API, and advanced component patterns.",
+          "category": "Web Development",
+          "lessons": [
+            {
+              "id": 1,
+              "title": "React Hooks",
+              "completed": false
+            },
+            {
+              "id": 2,
+              "title": "Context API",
+              "completed": false
+            }
+          ],
+          "title": "Advanced React"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "email": "pooja@gmail.com",
+      "username": "Pooja",
+      "password": "123",
+      "selectedCourse": []
+    },
+    {
+      "id": "3",
+      "email": "teacher@gmail.com",
+      "username": "Teacher",
+      "password": "teacher@123",
+      "selectedCourse": []
+    }
+  ]
+}
