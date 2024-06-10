@@ -10,7 +10,7 @@ This repository contains the code for the swanirbhar project, a platform for man
 
 ## Video Demo
 
-[Video Demo](https://drive.google.com/file/d/1novGaZb_PO3YDjzr27ESewTJZCqLzMng/view?usp=sharing)
+[Video Demo](https://drive.google.com/file/d/1PUzRjlmjJTJ8vyB3tORQD_YgVmodoENV/view?usp=sharing)
 
 ## Features
 
