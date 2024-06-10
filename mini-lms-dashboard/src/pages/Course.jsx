@@ -128,12 +128,12 @@ export default function Course() {
         <Heading as="h2" size="xl" mb={6} color="gray.800" textAlign="center">
           Selected Courses
         </Heading>
-        <Flex justifyContent="center" mb={4}>
+        <Flex direction={{ base: "column", md: "row" }} justifyContent="center" mb={4}>
           <ButtonGroup>
-            <Button colorScheme="teal" onClick={() => setFilter("all")}>
+            <Button colorScheme="teal" onClick={() => setFilter("all")} mb={{ base: 2, md: 0 }}>
               All ({userData.selectedCourse.length})
             </Button>
-            <Button colorScheme="green" onClick={() => setFilter("completed")}>
+            <Button colorScheme="green" onClick={() => setFilter("completed")} mb={{ base: 2, md: 0 }}>
               Completed (
               {
                 userData.selectedCourse.filter((course) =>
@@ -142,7 +142,7 @@ export default function Course() {
               }
               )
             </Button>
-            <Button colorScheme="red" onClick={() => setFilter("uncompleted")}>
+            <Button colorScheme="red" onClick={() => setFilter("uncompleted")} mb={{ base: 2, md: 0 }}>
               Incompleted (
               {
                 userData.selectedCourse.filter((course) =>
@@ -151,7 +151,7 @@ export default function Course() {
               }
               )
             </Button>
-            <Button colorScheme="orange" onClick={() => setFilter("partial")}>
+            <Button colorScheme="orange" onClick={() => setFilter("partial")} mb={{ base: 2, md: 0 }}>
               Partial (
               {
                 userData.selectedCourse.filter(
@@ -164,11 +164,10 @@ export default function Course() {
             </Button>
           </ButtonGroup>
         </Flex>
-        <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={10}>
+        <SimpleGrid columns={{ base: 1, sm: 2, md: 3, lg: 4 }} spacing={8}>
           {filteredCourses.map((course) => (
             <Card
               key={course.id}
-              maxW="md"
               bg="white"
               boxShadow="md"
               rounded="lg"
