@@ -29,8 +29,7 @@ import {
   IconButton,
   Flex,
 } from '@chakra-ui/react';
-import { HiChevronDown } from "react-icons/hi";
-import { HiOutlineChevronUp } from "react-icons/hi";
+import { HiChevronDown, HiOutlineChevronUp } from 'react-icons/hi';
 
 export default function TeacherPage() {
   const [courses, setCourses] = useState([]);
@@ -248,66 +247,70 @@ export default function TeacherPage() {
       <Navbar />
       <Container maxW="container.xl" bg="white" boxShadow="md" borderRadius="md" p={6}>
         <Heading mb={6} color="teal.500">Teacher Page</Heading>
-        <Table variant="simple">
-          <Thead>
-            <Tr>
-              <Th>Actions</Th>
-              <Th width={columnWidth}>Course</Th>
-              <Th>Description</Th>
-              <Th>Category</Th>
-              <Th>Edit</Th>
-              <Th>Delete</Th>
-            </Tr>
-          </Thead>
-          <Tbody>
-            {courses.map((course) => (
-              <React.Fragment key={course.id}>
-                <Tr>
-                  <Td>
-                    <IconButton
-                      icon={isLessonVisible[course.id] ? <HiOutlineChevronUp /> : <HiChevronDown />}
-                      onClick={() => toggleLessonVisibility(course.id)}
-                      variant="ghost"
-                      colorScheme="teal"
-                      aria-label="Toggle Lessons"
-                    />
-                  </Td>
-                  <Td width={columnWidth}>{course.course}</Td>
-                  <Td>{course.description}</Td>
-                  <Td>{course.category}</Td>
-                  <Td><Button colorScheme="teal" onClick={() => handleEditCourse(course)}>Edit</Button></Td>
-                  <Td><Button colorScheme="red" onClick={() => handleDeleteCourse(course.id)}>Delete</Button></Td>
-                </Tr>
-                {isLessonVisible[course.id] && (
+        <Box overflowX="auto">
+          <Table variant="simple">
+            <Thead>
+              <Tr>
+                <Th>Actions</Th>
+                <Th width={columnWidth}>Course</Th>
+                <Th>Description</Th>
+                <Th>Category</Th>
+                <Th>Edit</Th>
+                <Th>Delete</Th>
+              </Tr>
+            </Thead>
+            <Tbody>
+              {courses.map((course) => (
+                <React.Fragment key={course.id}>
                   <Tr>
-                    <Td colSpan="6" p={0}>
-                      <Table variant="simple" size="sm">
-                        <Thead>
-                          <Tr>
-                            <Th>Lesson</Th>
-                            <Th>Completed</Th>
-                            <Th>Edit Lesson</Th>
-                            <Th>Delete Lesson</Th>
-                          </Tr>
-                        </Thead>
-                        <Tbody>
-                          {course.lessons.map((lesson) => (
-                            <Tr key={lesson.id}>
-                              <Td>{lesson.title}</Td>
-                              <Td>{lesson.completed ? 'Yes' : 'No'}</Td>
-                              <Td><Button size="sm" colorScheme="teal" onClick={() => handleEditLesson(lesson, course.id)}>Edit</Button></Td>
-                              <Td><Button size="sm" colorScheme="red" onClick={() => handleDeleteLesson(course.id, lesson.id)}>Delete</Button></Td>
-                            </Tr>
-                          ))}
-                        </Tbody>
-                      </Table>
+                    <Td>
+                      <IconButton
+                        icon={isLessonVisible[course.id] ? <HiOutlineChevronUp /> : <HiChevronDown />}
+                        onClick={() => toggleLessonVisibility(course.id)}
+                        variant="ghost"
+                        colorScheme="teal"
+                        aria-label="Toggle Lessons"
+                      />
                     </Td>
+                    <Td width={columnWidth}>{course.course}</Td>
+                    <Td>{course.description}</Td>
+                    <Td>{course.category}</Td>
+                    <Td><Button colorScheme="teal" onClick={() => handleEditCourse(course)}>Edit</Button></Td>
+                    <Td><Button colorScheme="red" onClick={() => handleDeleteCourse(course.id)}>Delete</Button></Td>
                   </Tr>
-                )}
-              </React.Fragment>
-            ))}
-          </Tbody>
-        </Table>
+                  {isLessonVisible[course.id] && (
+                    <Tr>
+                      <Td colSpan="6" p={0}>
+                        <Box overflowX="auto">
+                          <Table variant="simple" size="sm">
+                            <Thead>
+                              <Tr>
+                                <Th>Lesson</Th>
+                                <Th>Completed</Th>
+                                <Th>Edit Lesson</Th>
+                                <Th>Delete Lesson</Th>
+                              </Tr>
+                            </Thead>
+                            <Tbody>
+                              {course.lessons.map((lesson) => (
+                                <Tr key={lesson.id}>
+                                  <Td>{lesson.title}</Td>
+                                  <Td>{lesson.completed ? 'Yes' : 'No'}</Td>
+                                  <Td><Button size="sm" colorScheme="teal" onClick={() => handleEditLesson(lesson, course.id)}>Edit</Button></Td>
+                                  <Td><Button size="sm" colorScheme="red" onClick={() => handleDeleteLesson(course.id, lesson.id)}>Delete</Button></Td>
+                                </Tr>
+                              ))}
+                            </Tbody>
+                          </Table>
+                        </Box>
+                      </Td>
+                    </Tr>
+                  )}
+                </React.Fragment>
+              ))}
+            </Tbody>
+          </Table>
+        </Box>
       </Container>
 
       <Modal isOpen={isEditCourseModalOpen} onClose={handleCloseEditCourseModal}>

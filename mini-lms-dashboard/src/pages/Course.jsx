@@ -129,11 +129,22 @@ export default function Course() {
           Selected Courses
         </Heading>
         <Flex direction={{ base: "column", md: "row" }} justifyContent="center" mb={4}>
-          <ButtonGroup>
-            <Button colorScheme="teal" onClick={() => setFilter("all")} mb={{ base: 2, md: 0 }}>
+          <ButtonGroup size="md" isAttached flexDirection={{ base: "column", md: "row" }}>
+            <Button
+              colorScheme="teal"
+              onClick={() => setFilter("all")}
+              mb={{ base: 2, md: 0 }}
+              // mr={{ md: 2 }}
+            >
               All ({userData.selectedCourse.length})
             </Button>
-            <Button colorScheme="green" onClick={() => setFilter("completed")} mb={{ base: 2, md: 0 }}>
+            <Button
+              colorScheme="green"
+              onClick={() => setFilter("completed")}
+              mb={{ base: 2, md: 0 }}
+              // mr={{ md: 2 }}
+              
+            >
               Completed (
               {
                 userData.selectedCourse.filter((course) =>
@@ -142,8 +153,13 @@ export default function Course() {
               }
               )
             </Button>
-            <Button colorScheme="red" onClick={() => setFilter("uncompleted")} mb={{ base: 2, md: 0 }}>
-              Incompleted (
+            <Button
+              colorScheme="red"
+              onClick={() => setFilter("uncompleted")}
+              mb={{ base: 2, md: 0 }}
+              // mr={{ md: 2 }}
+            >
+              Incomplete (
               {
                 userData.selectedCourse.filter((course) =>
                   course.lessons.every((lesson) => !lesson.completed)
@@ -151,7 +167,11 @@ export default function Course() {
               }
               )
             </Button>
-            <Button colorScheme="orange" onClick={() => setFilter("partial")} mb={{ base: 2, md: 0 }}>
+            <Button
+              colorScheme="orange"
+              onClick={() => setFilter("partial")}
+              mb={{ base: 2, md: 0 }}
+            >
               Partial (
               {
                 userData.selectedCourse.filter(
@@ -166,12 +186,7 @@ export default function Course() {
         </Flex>
         <SimpleGrid columns={{ base: 1, sm: 2, md: 3, lg: 4 }} spacing={8}>
           {filteredCourses.map((course) => (
-            <Card
-              key={course.id}
-              bg="white"
-              boxShadow="md"
-              rounded="lg"
-            >
+            <Card key={course.id} bg="white" boxShadow="md" rounded="lg">
               <Image
                 src="https://via.placeholder.com/350x250"
                 alt={course.title}
